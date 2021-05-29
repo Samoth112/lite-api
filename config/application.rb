@@ -34,7 +34,7 @@ module LiteApi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
     config.action_dispatch.default_headers = {
-    'Access-Control-Allow-Origin' => 'http://localhost:3001'
+    'Access-Control-Allow-Origin' => 'https://lite-api.herokuapp.com'
   }
   end
 end

@@ -21,7 +21,7 @@ williams_street_library.books.create({title: "Paris Is a Party, Paris Is a Ghost
 Book.last.authors.find_or_create_by({first_name: "David Hoon", last_name: "Kim"})
 
 sponser_one = User.create({first_name: "Sponser", last_name: "One"})
-williams_street_library.sponsers.create(sponser: sponser_one)
+williams_street_library.sponsers.create(user: sponser_one)
 sponser_one.books.create({title: "It's Not Easy Being a Bunny", page_count: 48, description: "P.J. Funnybunny is tired of cooked carrots and his big ears. It would be way more fun to be a bear, a bird, or a pig...right? Read along as P.J. leaves home and tries to determine who he is—and where he belongs. But this bunny might just learn that all he wants to be is...himself!", isbn: "9780394861029", img_url: "https://i.imgur.com/0201U1Z.jpg"})
 Book.last.authors.find_or_create_by({first_name: "Marilyn", last_name: "Sadler"})
 sponser_one.books.create({title: "If Animals Kissed Good Night", page_count: 34, description: "If animals kissed good night like we do...how would they do it? Giraffe and his calf would stretch their necks high, Wolf and his pup would kiss and then HOWL, and Sloth and her baby would move sooooo sloooowwwww. And across the animal kingdom, every creature would share love in a unique way.", isbn: "9780374300210", img_url: "https://i.imgur.com/hrbMgAd.jpg"})

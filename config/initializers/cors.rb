@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://biblio-lite.herokuapp.com'
+    origins 'https://biblio-lite.netlify.app'
     resource '*', headers: :any, methods: [:get, :post, :patch, :delete, :options], credentials: true
   end
 end
